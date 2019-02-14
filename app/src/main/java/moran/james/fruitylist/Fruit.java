@@ -1,7 +1,7 @@
 package moran.james.fruitylist;
 
 /*
-*@author James Moran
+*@author JamesMoran
 * Stores Fruit object data and manipulate fields
 * so they are returned in the correct measurement unit
 * methods include getPriceInPoundsAndPence()and
@@ -51,13 +51,13 @@ public class Fruit {
         gets weight with formatted unit String
      */
     public String formatWeightOfFruit(){
-        return Double.toString(this.getWeightInKilograms())+" KG";
+        return Double.toString(this.getWeightInKilograms())+"KG";
     }
 
     /*
         gets price with formatted unit String
      */
     public String formatPriceOfFruit(){
-        return "£ " +Double.toString(this.getWeightInKilograms());
+        return "£" +Double.toString(this.getPriceInPoundsAndPence());
     }
 }

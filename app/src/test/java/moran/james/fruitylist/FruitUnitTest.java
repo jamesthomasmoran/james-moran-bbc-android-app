@@ -11,9 +11,11 @@ import java.util.Collection;
 import static org.junit.Assert.*;
 
 /**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ * @author JamesMoran
+ * Unit Test for Fruit Class
+ * Tests functionality of class to return price in pounds and pence
+ * return weight in kilograms and format these as a string with an
+ * attached unit
  */
 @RunWith(Parameterized.class)
 public class FruitUnitTest {
@@ -31,7 +33,7 @@ public class FruitUnitTest {
                         new FruitExpectedValues(0.19,0.018,"£0.19","0.018KG")
                 },
                 {       "orange", 199, 150,
-                        new FruitExpectedValues(1.99,1.5,"£1.99","0.15KG")
+                        new FruitExpectedValues(1.99,0.15,"£1.99","0.15KG")
                 },
                 {       "pear", 99, 100,
                         new FruitExpectedValues(0.99,0.1,"£0.99","0.1KG")

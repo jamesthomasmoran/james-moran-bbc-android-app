@@ -1,5 +1,10 @@
 package moran.james.fruitylist;
 
+/*
+*@author JamesMoran
+* provides expected values for Fruit class
+* unit test
+ */
 public class FruitExpectedValues {
     private Double priceInPoundsAndPence;
     private Double weightInKilograms;
