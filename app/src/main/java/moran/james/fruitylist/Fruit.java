@@ -46,4 +46,18 @@ public class Fruit {
         double weightInKilograms=this.weightInGrams/1000;
         return weightInKilograms;
     }
+
+    /*
+        gets weight with formatted unit String
+     */
+    public String formatWeightOfFruit(){
+        return Double.toString(this.getWeightInKilograms())+" KG";
+    }
+
+    /*
+        gets price with formatted unit String
+     */
+    public String formatPriceOfFruit(){
+        return "£ " +Double.toString(this.getWeightInKilograms());
+    }
 }
